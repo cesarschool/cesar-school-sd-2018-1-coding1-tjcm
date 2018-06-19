@@ -10,9 +10,24 @@
 void fizzBizz(int start, int end)
 {
     printf("\nFizzBizz::START: %d, %d\n", start, end);
+    int val = 0;
     
-    // TODO: Your code here!
-    // Ex.: printf("Fizz\n");
+     for(val = start; val <= end; val ++ )
+   {
+       if ( (val % 5 == 0) && (val % 3 == 0) ) {
+           printf("FizzBizz\n");
+       } else if(val % 5 == 0) {
+           printf("Bizz\n");
+       } else if(number % 3 == 0) {
+           printf("Fizz\n");
+       } else {
+           printf("%d\n", val);
+       }
+   }
+   // Ex.: printf("Fizz\n");
+   
+   printf("\nFizzBizz::END\n");
+}
     
     printf("\nFizzBizz::END\n");
 }
