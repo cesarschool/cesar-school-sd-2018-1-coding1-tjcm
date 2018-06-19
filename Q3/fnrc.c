@@ -12,8 +12,21 @@ char firstNonRepeatingChar (char sentence[], int length)
 {
     printf("\nfirstNonRepeatingChar::START: %s, %d\n", s, length);
     
-    // TODO: YOUR CODE HERE!
+    int diferente; 
     
+   for(int i = 0; i < length ; i++){ 
+       diferente = 0; 
+       for(int j = 0; j < length ; j++){
+           if (i != j && sentence[i] == sentence[j]){
+             diferente = 1; 
+             } 
+        } 
+       if (diferente==0) 
+           printf("%c", sentence[i]); 
+           printf("\nfirstNonRepeatingChar::END\n");
+           return sentence[i]; 
+       } 
+   }
     printf("\nfirstNonRepeatingChar::END\n");
     return -1;
 }
